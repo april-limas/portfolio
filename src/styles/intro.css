@@ -82,6 +82,9 @@
 }
 
 @media screen and (min-width: 500px) {
+    .intro {
+        top: -1em;
+    }
     .intro__title {
         top: -2em;
         font-size: 5em;
