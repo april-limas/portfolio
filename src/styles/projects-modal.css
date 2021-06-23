@@ -1,0 +1,334 @@
+.modal-container {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+}
+
+.modal-content {
+    margin: 25% auto;
+    width: 80%;
+    height: 51vh;
+    border-radius: 20px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    background: linear-gradient(45deg, #ffaf00, #bb02ff);
+    animation: modal 1s ease;
+}
+
+.modal-content-smaller {
+    margin: 20% auto;
+    width: 80%;
+    height: 70vh;
+    border-radius: 20px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    background: linear-gradient(45deg, #ffaf00, #bb02ff);
+    animation: modal 1s ease;
+}
+
+.submit-content {
+    margin: 20% auto;
+    width: 80%;
+    height: 60vh;
+    border-radius: 20px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    background: linear-gradient(45deg, #ffaf00, #bb02ff);
+    animation: modal 1s ease;
+}
+
+@keyframes modal {
+    from { 
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-header {
+    position: relative;
+    padding: 2em 1em 1em 0em;
+    color: var(--clr-light);
+}
+
+.modal-header h2 {
+    font-family: var(--ff-primary);
+    margin-left: 1em;
+    margin-top: -0.5em;
+    margin-bottom: 0.5em;
+}
+
+.modal-header h1 {
+    font-family: var(--ff-primary);
+    margin-left: 2.1em;
+    margin-top: 0.2em;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 0.7em;
+    right: 0.8em;
+    font-size: 30px;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+    color: var(--clr-accent);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.media-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4em;
+}
+
+.submit-container {
+    width: 100;
+    height: 100;
+    text-align: center;
+    padding: 60px;
+}
+
+.submit-container .form-response {
+    color: var(--clr-light);
+    font-family: var(--ff-cursive);
+    font-weight: 200;
+    font-size: 3rem;
+    margin-top: -0.5em;
+}
+
+.submit-container .form-reponse__body {
+    font-size: 1.2rem;
+    font-family: var(--ff-primary);
+    margin-top: 2.1em;
+}
+
+.submit-header {
+    position: relative;
+    color: var(--clr-light);
+}
+
+.demo-video {
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.modal-footer {
+    background: coral;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.carousel-container {
+    position: relative;
+    top: 2%;
+    height: 65%;
+    width: 80%;
+    margin: -0.3em auto;
+}
+
+.carousel__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    font-size: 60px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.carousel__button--left {
+    left: -50px;
+}
+
+.carousel__button--right {
+    right: -50px;
+}
+
+.carousel__button--left:hover,
+.carousel__button--right:hover {
+    color: rgba(255, 255, 255, 0.75);
+    transition: all 0.5s ease-in;
+}
+
+.slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.active {
+    display: inline-block;
+}
+
+.inactive {
+    display: none;
+}
+
+.carousel__nav {
+    position: relative;
+    top: 0;
+    left: 0%;
+    padding: 12px 0;
+    width: 110%;
+}
+
+.dot {
+    display: inline-block;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.dot.active-dot,
+.dot:hover {
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.detail-wrapper {
+    position: relative;
+    left: 12%;
+    top: 0;
+    width: 80%;
+    color: var(--clr-light);
+    font-family: var(--ff-primary);
+}
+
+.detail-wrapper p {
+    margin-top: 1.2em;
+}
+
+.detail-container {
+    margin-top: 2em;
+}
+
+.detail-technologies {
+    margin-top: 1.5em;
+}
+
+.detail-technologies ul {
+    padding: 1em 1.4em;
+}
+
+@media screen and (min-width: 700px) {
+    .modal-content {
+        margin: 15% auto;
+        height: 65vh;
+    }
+    .modal-content-smaller {
+        margin: 15% auto;
+        width: 80%;
+        height: 60vh;
+    }
+    .submit-content {
+        margin: 14% auto;
+        width: 70%;
+        height: 60vh;
+    }
+    .modal-header {
+        padding: 1.6em 1.6em 1em 0em;
+    }
+    .modal-header h2 {
+        margin-left: 3.2em;
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+    .modal-header h1 {
+        margin-left: 3em;
+        margin-top: 0.5em;
+    }
+    .detail-wrapper {
+        left: 12%;
+        top: -0.5em;
+    }
+    .carousel-container {
+        top: 3%;
+        height: 70%;
+    }
+    .carousel__nav {
+        left: 20%;
+        width: 100%;
+    }
+    .carousel__button--left {
+        left: -60px;
+    }
+    
+    .carousel__button--right {
+        right: -60px;
+    }
+    .dot {
+        width: 15px;
+        height: 15px;
+    }
+    .closeBtn {
+        right: 1.2em;
+    }
+    .submit-container .form-response {
+        font-size: 3.2rem;
+        margin-top: -0.3em;
+    }
+    .submit-container .form-reponse__body {
+        font-size: 1.3rem;
+        margin-top: 3em;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .modal-content {
+        margin: 6% auto;
+        height: 85vh;
+    }
+    .modal-content-smaller {
+        margin: 10% auto;
+        width: 60%;
+        height: 60vh;
+    }
+    .submit-content {
+        margin: 14% auto;
+        width: 50%;
+        height: 50vh;
+    }
+    .modal-header h2 {
+        margin-left: 4.8em;
+    }
+    .modal-header h1 {
+        margin-left: 3.2em;
+    }
+    .carousel-container {
+        top: 3%;
+        height: 75%;
+    }
+    .carousel__nav {
+        left: 30%;
+    }
+    
+    .detail-wrapper p {
+        margin-top: 1.5em;
+    }
+    .detail-container {
+        margin-top: 2.3em;
+    }
+    .submit-container .form-reponse__body {
+        margin-top: 1.8em;
+    }
+}

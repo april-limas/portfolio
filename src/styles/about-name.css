@@ -1,0 +1,201 @@
+.about-text {
+    position: absolute;
+    bottom: 23em;
+    left: 1.7em;
+    border-right: 2px solid var(--clr-light);
+    font-family: var(--ff-cursive);
+    color: var(--clr-light);
+    font-size: 1.5rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+    min-height: 100px;
+    transform: translateY(-50%);
+}
+
+.about-text h2 {
+    position: absolute;
+    bottom: 0.6em;
+    left: 0.5em;
+}
+
+
+.about-animate {
+    animation: typewriter-text-first 3s steps(30) 1s 1 normal both,
+               cursor 0.5s steps(30) infinite normal;
+}
+
+@keyframes typewriter-text-first {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 84%;
+    }
+}
+
+@keyframes cursor {
+    0% {
+        border-right-color: var(--clr-light);
+    }
+    100% {
+        border-right-color: transparent;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .about-text {
+        bottom: 19em;
+        left: 2.4em;
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .about-text {
+        bottom: 14em;
+        left: 1.3em;
+        font-size: 2.2rem;
+        min-height: 130px;
+    }
+    .about-animate {
+        animation: typewriter-text-second 3s steps(30) 1s 1 normal both,
+        cursor 0.5s steps(30) infinite normal;
+    }
+}
+
+@keyframes typewriter-text-second {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 88%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .about-text {
+        left: 1em;
+        bottom: 11.5em;
+        font-size: 2.5rem;
+    }
+    .about-animate {
+        animation: typewriter-text-third 3s steps(30) 1s 1 normal both,
+        cursor 0.5s steps(30) infinite normal;
+    }
+}
+
+@keyframes typewriter-text-third {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 87%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .about-text {
+        left: 1.5em;
+        bottom: 10.5em;
+        min-height: 140px;
+        font-size: 2.7rem;
+    }
+    .about-animate {
+        animation: typewriter-text-fourth 3s steps(30) 1s 1 normal both,
+        cursor 0.5s steps(30) infinite normal;
+    }
+}
+
+@keyframes typewriter-text-fourth {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 84%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .about-text {
+        left: 2.5em;
+        font-size: 2.7rem;
+    }
+    .about-animate {
+        animation: typewriter-text-fifth 3s steps(30) 1s 1 normal both,
+        cursor 0.5s steps(30) infinite normal;
+    }
+}
+
+@keyframes typewriter-text-fifth {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 76%;
+    }
+}
+
+@media screen and (min-width: 1130px) {
+    .about-text {
+        left: 3.3em;
+        bottom: 10em;
+        min-height: 150px;
+        font-size: 2.81rem;
+    }
+    .about-animate {
+        animation: typewriter-text-sixth 3s steps(30) 1s 1 normal both,
+        cursor 0.5s steps(30) infinite normal;
+    }
+}
+
+@keyframes typewriter-text-sixth {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1245px) {
+    .about-text {
+        left: 5em;
+        bottom: 10em;
+        min-height: 150px;
+        font-size: 2.81rem;
+    }
+    .about-animate {
+        animation: typewriter-text-seventh 3s steps(30) 1s 1 normal both,
+        cursor 0.5s steps(30) infinite normal;
+    }
+}
+
+@keyframes typewriter-text-seventh {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 63%;
+    }
+}
+
+@media screen and (min-width: 1435px) {
+    .about-text {
+        left: 7em;
+    }
+    .about-animate {
+        animation: typewriter-text-eighth 3s steps(30) 1s 1 normal both,
+        cursor 0.5s steps(30) infinite normal;
+    }
+}
+
+@keyframes typewriter-text-eighth {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 55%;
+    }
+}

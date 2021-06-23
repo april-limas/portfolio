@@ -1,0 +1,212 @@
+.about-container {
+    position: absolute;
+    bottom: 31em;
+    left: 4.5em;
+    font-family: var(--ff-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    height: 70px;
+    width: 100;
+}
+
+.about-wrapper {
+    display: inline-flex;
+}
+
+
+.static-text {
+    color: #f5b34e;
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+    top: 0.5em;
+    overflow: hidden;
+}
+
+.dynamic-texts {
+    margin-left: 15px;
+    height: 130px;
+    line-height: 81px;
+    overflow: hidden;
+}
+
+.dynamic-texts li {
+    position: relative;
+    top: -9px;
+    list-style: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: #f5de76;
+    animation: slide 4s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -367px;
+    }
+}
+
+.dynamic-texts li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+
+
+.dynamic-texts li span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 150%;
+    width: 100%;
+    background: #d643a0;
+    border-left: 2px solid #eed256;
+    animation: typing 1s steps(20) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+@media screen and (min-width: 580px) {
+    .about-container {
+        left: 7em;
+        bottom: 30em;
+        height: 75px;
+    }
+    .static-text {
+        font-size: 35px;
+        top: 0.5em;
+    }
+    .dynamic-texts li span::after {
+        height: 140%;
+    }
+    .dynamic-texts li {
+        font-size: 35px;
+        top: 2px;
+        animation: slide-two 4s steps(4) infinite;
+    }
+}
+
+@keyframes slide-two {
+    100% {
+        top: -367px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .about-container {
+        left: 7.5em;
+        bottom: 29em;
+    }
+    .static-text {
+        font-size: 40px;
+        top: 0.37em;
+    }
+    .dynamic-texts li {
+        font-size: 40px;
+        top: 0;
+    }
+    .dynamic-texts li span::after {
+        height: 140%;
+    }
+}
+
+@media screen and (min-width: 740px) {
+    .about-container {
+        left: 6.5em;
+        bottom: 28em;
+        height: 70px;
+    }
+    .static-text {
+        font-size: 45px;
+        top: 0px;
+    }
+    .dynamic-texts li {
+        font-size: 45px;
+        top: -12px;
+    }
+    .dynamic-texts li span::after {
+        height: 120%;
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .about-container {
+        left: 8em;
+        bottom: 27em; 
+    }
+    .static-text {
+        font-size: 50px;
+        top: -3px;
+    }
+    .dynamic-texts li {
+        font-size: 50px;
+        top: -14px;
+        animation: slide-three 4s steps(4) infinite;
+    }
+    .dynamic-texts li span::after {
+        height: 110%;
+    }
+}
+
+@keyframes slide-three {
+    100% {
+        top: -360px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .about-container {
+        left: 10em;
+        bottom: 26em;
+        height: 75px;
+    }
+    .static-text {
+        font-size: 55px;
+        top: -7px;
+    }
+    .dynamic-texts {
+        line-height: 80px;
+    }
+    .dynamic-texts li {
+        font-size: 55px;
+        top: -12px;
+    }
+    .dynamic-texts li span::after {
+        height: 130%;
+    }
+}
+
+
+@media screen and (min-width: 1300px) {
+    .about-container {
+        left: 25em;
+        height: 70px;
+        overflow: hidden;
+        /* border: 1px solid white; */
+    }
+    .static-text {
+        top: -16px;
+    }
+    .dynamic-texts {
+        line-height: 90px;
+    }
+    .dynamic-texts li {
+        top: -20px;
+        animation: slide-four 4s steps(4) infinite;
+    }
+    .dynamic-texts li span::after {
+        height: 110%;
+    }
+}
+
+@keyframes slide-four {
+    100% {
+        top: -380px;
+    }
+}
+

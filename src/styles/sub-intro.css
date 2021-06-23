@@ -1,0 +1,106 @@
+.sub-intro {
+    position: absolute;
+    top: 53%;
+    font-family: 'The Brittany Sans', sans-serif;
+    transform: translateY(-50%);
+    text-align: center;
+    color: var(--clr-light);
+    font-size: 2em;
+    display: flex;
+}
+
+.sub-intro span {
+    opacity: 0;
+    display: inline-block;
+    animation: title 1s linear forwards;
+}
+
+@keyframes title {
+    0% {
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+    }
+}
+
+.sub-intro span:nth-child(1) {
+    animation-delay: 3s;
+}
+
+.sub-intro span:nth-child(2) {
+    animation-delay: 3.1s;
+}
+
+.sub-intro span:nth-child(3) {
+    animation-delay: 3.2s;
+}
+
+.sub-intro span:nth-child(4) {
+    animation-delay: 3.3s;
+}
+
+.sub-intro span:nth-child(5) {
+    animation-delay: 3.4s;
+}
+
+.sub-intro span:nth-child(6) {
+    animation-delay: 3.5s;
+}
+
+.sub-intro span:nth-child(7) {
+    animation-delay: 3.6s;
+}
+
+.sub-intro span:nth-child(8) {
+    animation-delay: 3.7s;
+}
+
+.sub-intro span:nth-child(9) {
+    animation-delay: 3.8s;
+}
+
+.sub-intro span:nth-child(10) {
+    animation-delay: 3.9s;
+}
+
+.sub-intro span:nth-child(11) {
+    animation-delay: 4s;
+}
+
+.sub-intro span:nth-child(12) {
+    animation-delay: 4.1s;
+}
+
+.sub-intro span:nth-child(13) {
+    animation-delay: 4.2s;
+}
+
+.sub-intro span:nth-child(14) {
+    animation-delay: 4.3s;
+}
+
+.sub-intro span:nth-child(15) {
+    animation-delay: 4.4s;
+}
+
+.sub-intro span:nth-child(16) {
+    animation-delay: 4.5s;
+}
+
+@media screen and (min-width: 575px) {
+    .sub-intro {
+        font-size: 2.4em;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .sub-intro {
+        font-size: 2.8em;
+    }
+}
+

@@ -1,0 +1,95 @@
+.intro {
+    position: absolute;
+    top: -2em;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.intro__title {
+    font-size: 5em;
+    font-family: var(--ff-cursive);
+    color: var(--clr-light);
+    text-align: center;
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.intro__title span {
+    opacity: 0;
+    animation: name 3s ease forwards;
+}
+
+@keyframes name {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        filter: blur(20px);
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+}
+
+.intro__title span:nth-child(10n+1) {
+    animation-delay: 0.1s;
+}
+
+.intro__title span:nth-child(10n+2) {
+    animation-delay: 0.2s;
+}
+
+.intro__title span:nth-child(10n+3) {
+    animation-delay: 0.3s;
+}
+
+.intro__title span:nth-child(10n+4) {
+    animation-delay: 0.4s;
+}
+
+.intro__title span:nth-child(10n+5) {
+    animation-delay: 0.5s;
+}
+
+.intro__title span:nth-child(10n+6) {
+    animation-delay: 0.6s;
+}
+
+.intro__title span:nth-child(10n+7) {
+    animation-delay: 0.7s;
+}
+
+.intro__title span:nth-child(10n+8) {
+    animation-delay: 0.8s;
+}
+
+.intro__title span:nth-child(10n+9) {
+    animation-delay: 0.9s;
+}
+
+.intro__title span:nth-child(10n+10) {
+    animation-delay: 1s;
+}
+
+@media screen and (min-width: 575px) {
+    .intro__title {
+        font-size: 6em;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .intro__title {
+        font-size: 7em;
+    }
+}
+
+
+

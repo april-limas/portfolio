@@ -1,0 +1,181 @@
+.contact-top {
+    width: 100%;
+    height: 300vh;
+    margin-top: 0em;
+    background: linear-gradient(45deg, #ffaf00, #bb02ff);
+    background-attachment: fixed;
+    animation: about 2s ease-in;
+}
+
+@keyframes about {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.contact-top__body {
+    width: 100%;
+    height: 100vh;
+}
+
+.contact-title {
+    position: relative;
+    top: 1.5em;
+    text-align: center;
+    font-size: 5em;
+    font-family: var(--ff-cursive);
+    color: var(--clr-light);
+}
+
+.contact-banner {
+    position: relative;
+    top: 13em;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(480px, rgb(233, 202, 202), transparent 50%);
+    margin-top: -50px;
+}
+
+.contact-banner-icons {
+    height: 100%;
+    animation: rotation 60s linear infinite;
+}
+
+@keyframes rotation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.banner-icon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5em;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    overflow: hidden;
+}
+
+.banner-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: skewX(45deg) translateX(150px);
+    transition: 0.5s;
+}
+
+.banner-icon:hover::before {
+    transform: skewX(45deg) translateX(-150px);
+}
+
+.banner-icon a,
+.contact-banner-image a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.github-a {
+    font-size: 1.3em;
+}
+
+.banner-icon:nth-child(1) {
+    top: 1%;
+    left: 43%;
+}
+
+.banner-icon:nth-child(2) {
+    top: 25%;
+    right: 4%;
+}
+
+.banner-icon:nth-child(3) {
+    top: 69%;
+    left: 69%;
+}
+
+.banner-icon:nth-child(4) {
+    top: 25%;
+    left: 4%;
+}
+
+.banner-icon:nth-child(5) {
+    top: 69%;
+    left: 13%
+}
+
+.contact-banner-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 8rem;
+    
+}
+
+.contact-banner-image {
+    transition: top 0.5s;
+}
+
+.contact-banner-image:hover {
+    top: 45%;
+}
+
+@media screen and (min-width: 900px) {
+    .contact-title {
+        top: 1.1em;
+        font-size: 7em;
+    }
+    .contact-banner {
+        top: 12.4em;
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(520px, rgb(233, 202, 202), transparent 50%);
+    }
+    .contact-banner-image {
+        font-size: 10rem;
+    }
+    .banner-icon:nth-child(1) {
+        top: 0;
+        left: 42%;
+    }
+    
+    .banner-icon:nth-child(2) {
+        top: 25%;
+        right: 0;
+    }
+    
+    .banner-icon:nth-child(3) {
+        top: 71%;
+        left: 71%;
+    }
+    
+    .banner-icon:nth-child(4) {
+        top: 25%;
+        left: 0;
+    }
+    
+    .banner-icon:nth-child(5) {
+        top: 70%;
+        left: 10%
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .contact-top {
+        height: 200vh;
+    }
+}

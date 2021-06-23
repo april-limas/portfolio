@@ -1,0 +1,171 @@
+.scene {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #ffaf00, #bb02ff);
+    background-attachment: fixed;
+    overflow: hidden;
+    overflow-y: hidden;
+    animation: scene 2s linear;
+}
+
+.moon {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: screen;
+    animation: scene 2s linear;
+}
+
+@keyframes scene {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.mountain {
+    position: absolute;
+    bottom: 43px;
+    left: -170px;
+    width: 100%;
+    z-index: 800;
+    transform: scale(1.3);
+}
+
+.mountain2 {
+    position: absolute;
+    bottom: 43px;
+    right: -260px;
+    width: 100%;
+    z-index: 800;
+    transform: scale(1.3); 
+}
+
+.scene i {
+    position: absolute;
+    background: var(--clr-light);
+    border-radius: 50%;
+    animation: stars linear infinite;
+}
+
+@keyframes stars {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    10%,
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
+
+.cloud1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 600px;
+    z-index: 900;
+    animation: animateCloud 50s linear infinite;
+}
+
+.cloud2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 500px;
+    z-index: 900;
+    animation: animateCloud 35s linear infinite;
+}
+
+.cloud3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 600px;
+    z-index: 900;
+    animation: animateCloud 80s linear infinite;
+}
+
+.cloud4 {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    max-width: 300px;
+    z-index: 900;
+    animation: animateCloud 70s linear infinite;
+    animation-delay: -20s;
+}
+
+.cloud5 {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    max-width: 500px;
+    z-index: 900;
+    animation: animateCloud 40s linear infinite;
+    animation-delay: -5s;
+}
+
+.cloud6 {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    max-width: 400px;
+    z-index: 900;
+    animation: animateCloud 30s linear infinite;
+    animation-delay: -10s;
+}
+
+@keyframes animateCloud {
+    0% {
+        transform: translateX(-100%) scale(1);
+    }
+    100% {
+        transform: translateX(400%) scale(1.5);
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .mountain {
+        bottom: -14px;
+        left: -170px; 
+        transform: scale(0.95);
+    }
+    .mountain2 {
+        bottom: -27px;
+        right: -260px;
+        transform: scale(0.9);
+    } 
+}
+
+@media screen and (min-width: 980px) {
+    .mountain {
+        bottom: -52px;
+        left: -220px;
+        transform: scale(0.85);
+    }
+    .mountain2 {
+        bottom: -86px;
+        right: -300px;
+        transform: scale(0.75);
+    } 
+}
+
+@media screen and (min-width: 1300px) {
+    .mountain {
+        bottom: -81px;
+        left: -280px;
+        transform: scale(0.8); 
+    }
+    .mountain2 {
+        bottom: -121px;
+        right: -380px;
+        transform: scale(0.7); 
+    }
+}
+
