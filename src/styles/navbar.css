@@ -52,6 +52,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: rgb(226, 158, 226);
 }
 
 .nav__item {
@@ -171,6 +172,12 @@
 
 .nav__item:hover ~ .cursor {
     transform: scale(3);
+}
+
+@media screen and (min-width: 500px) {
+    .nav__list {
+        color: var(--clr-light)
+    }
 }
 
 @media screen and (min-width: 600px) {
