@@ -15,9 +15,16 @@
     position: relative;
     top: 3em;
     text-align: center;
-    font-size: 5em;
+    font-size: 4em;
     font-family: var(--ff-cursive);
     color: var(--clr-light);
+}
+
+@media screen and (min-width: 500px) {
+    #page-text {
+        font-size: 5em;
+        top: 2.5em;
+    }
 }
 
 @media screen and (min-width: 575px) {
