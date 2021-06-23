@@ -1,6 +1,6 @@
 .about-body {
     position: relative;
-    top: 22em;
+    top: 19em;
     width: 100%;
     padding-top: 1em;
     padding-left: 0em;
@@ -42,6 +42,19 @@
         opacity: 0;
         filter: blur(20px);
         transform: translateX(300px) translateY(-300px) rotate(720deg) scale(4);
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .about-body {
+        top: 22em;
+        padding-top: 1em;
+        padding-left: 0em;
+        padding-right: 0em;
+        padding-bottom: 2em;
+    }
+    .about-body__para {
+        font-size: 1.2em;
     }
 }
 

@@ -11,7 +11,7 @@
 
 .parallax-body {
     position: relative;
-    padding: 0 6em;
+    padding: 0 4em;
     width: 100%;
     overflow: scroll;
     min-height: 100vh;
@@ -38,7 +38,7 @@
 .girl {
     z-index: 10;
     width: 273%;
-    transform: translateX(-32%);
+    transform: translate(-31%, 8%);
 }
 
 .sun {
@@ -63,15 +63,30 @@
 
 .parallax-title {
     position: absolute;
-    top: 3.8em;
-    left: 2.2em;
+    top: 4.5em;
+    left: 2em;
     font-family: var(--ff-cursive);
     transform: translate(-50%, -50%);
     z-index: 5;
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--clr-light);
     width: 40%;
     white-space: nowrap;
+}
+
+@media screen and (min-width: 500px) {
+    .parallax-title {
+        top: 3.8em;
+        left: 2.2em;
+        font-size: 5rem;
+    }
+    .girl {
+        width: 233%;
+        transform: translateX(-29%);
+    }
+    .parallax-body {
+        padding: 0 6em;
+    }
 }
 
 @media screen and (min-width: 535px) {
@@ -93,8 +108,8 @@
         font-size: 5.5rem;
     }
     .girl {
-        width: 213%;
-        transform: translateX(-26.5%);
+        width: 273%;
+        transform: translateX(-32%);
     }
 }
 

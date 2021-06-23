@@ -3,9 +3,9 @@
 
 
 :root {
-    --ff-primary: 'Poppins', sans-serif;
-    --ff-secondary: 'Montserrat', sans-serif;
-    --ff-cursive: 'Brittany Signature', cursive;
+    --ff-primary: 'Poppins', 'Verdana', 'Arial', sans-serif;
+    --ff-secondary: 'Montserrat', 'Verdana', 'Arial', sans-serif;
+    --ff-cursive: 'Brittany Signature', 'Bradley Hand', cursive;
 
     --fw-reg: 300;
     --fw-bold: 900;

@@ -21,9 +21,9 @@ export const ContactBody = () => {
     }, [])
 
     const handleChange = (e) => {
-        if (e.target.name == "name") {
+        if (e.target.name === "name") {
             setName(e.target.value)
-        } else if (e.target.name == "email") {
+        } else if (e.target.name === "email") {
             setEmail(e.target.value)
         } else {
             setMessage(e.target.value)
@@ -31,10 +31,10 @@ export const ContactBody = () => {
     }
 
     const handleFocus = (e) => {
-        if (e.target.name == "name") {
+        if (e.target.name === "name") {
             let name = document.getElementById('inputName')
             name.classList.add("focus")
-        } else if (e.target.name == "email") {
+        } else if (e.target.name === "email") {
             let email = document.getElementById('inputEmail')
             email.classList.add("focus")
         } else {
@@ -44,11 +44,11 @@ export const ContactBody = () => {
     }
 
     const handleBlur = (e) => {
-        if (e.target.value == "") {
-            if (e.target.name == "name") {
+        if (e.target.value === "") {
+            if (e.target.name === "name") {
                 let name = document.getElementById('inputName')
                 name.classList.remove("focus")
-            } else if (e.target.name == "email") {
+            } else if (e.target.name === "email") {
                 let email = document.getElementById('inputEmail')
                 email.classList.remove("focus")
             } else {
@@ -127,21 +127,21 @@ export const ContactBody = () => {
                         </div>
                         <div className="contact-box">
                             <div className="contact-icon">
-                                <a href={resume} target="_blank" className="link link-icon"><FiDownload /></a>
+                                <a href={resume} target="_blank" rel="noreferrer" className="link link-icon"><FiDownload /></a>
                             </div>
                             <div className="contact-text">
                                 <h3>Resume</h3>
-                                <p>Download <a href={resume} target="_blank" className="link link-here">here</a> or click the icon</p>
+                                <p>Download <a href={resume} target="_blank" rel="noreferrer" className="link link-here">here</a> or click the icon</p>
                             </div>
                         </div>
                         <div className="contact-box social-media">
                             <p>Connect with me:</p>
                             <ul className="social-icons">
-                                <li><a href="https://www.facebook.com/aprilj.limas/" target="_blank"><FaFacebookF /></a></li>
-                                <li><a href="https://www.instagram.com/posh_chic04/" target="_blank"><FaInstagramSquare /></a></li>
-                                <li><a href="https://twitter.com/aprilj_limas" target="_blank"><FaTwitter /></a></li>
-                                <li><a href="https://www.linkedin.com/in/aprillimas/" target="_blank"><FaLinkedinIn /></a></li>
-                                <li><a href="https://github.com/april-limas" target="_blank"><FaGithub className="github-b"/></a></li>
+                                <li><a href="https://www.facebook.com/aprilj.limas/" target="_blank" rel="noreferrer"><FaFacebookF /></a></li>
+                                <li><a href="https://www.instagram.com/posh_chic04/" target="_blank" rel="noreferrer"><FaInstagramSquare /></a></li>
+                                <li><a href="https://twitter.com/aprilj_limas" target="_blank" rel="noreferrer"><FaTwitter /></a></li>
+                                <li><a href="https://www.linkedin.com/in/aprillimas/" target="_blank" rel="noreferrer"><FaLinkedinIn /></a></li>
+                                <li><a href="https://github.com/april-limas" target="_blank" rel="noreferrer"><FaGithub className="github-b"/></a></li>
                             </ul>
                         </div>
                     </div>

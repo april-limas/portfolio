@@ -1,16 +1,18 @@
 .intro {
     position: absolute;
-    top: -2em;
+    top: 3em;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .intro__title {
-    font-size: 5em;
+    font-size: 4em;
     font-family: var(--ff-cursive);
     color: var(--clr-light);
     text-align: center;
@@ -77,6 +79,13 @@
 
 .intro__title span:nth-child(10n+10) {
     animation-delay: 1s;
+}
+
+@media screen and (min-width: 500px) {
+    .intro__title {
+        top: -2em;
+        font-size: 5em;
+    }
 }
 
 @media screen and (min-width: 575px) {

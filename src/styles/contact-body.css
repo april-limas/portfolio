@@ -48,8 +48,8 @@
 
 .contact-icon {
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     display: inline-block;
     border-radius: 50%;
     display: flex;
@@ -173,7 +173,7 @@
 
 .contact-form-container {
     position: relative;
-    width: 400px;
+    width: 320px;
     min-height: 400px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
@@ -288,22 +288,6 @@
     font-size: 0.8rem;
 }
 
-@media (max-width: 991px) {
-    .contact-wrapper {
-        padding: 50px;
-    }
-    .contact-content {
-        flex-direction: column;
-    }
-    .contact-info {
-        margin-bottom: 40px;
-    }
-    .contact-info,
-    .contact-form {
-        width: 100%;
-    }
-}
-
 .social-media {
     display: flex;
     flex-direction: column;
@@ -327,8 +311,9 @@
 
 .social-icons li a {
     position: relative;
-    width: 60px;
-    height: 60px;
+    right: 1.3em;
+    width: 50px;
+    height: 50px;
     display: inline-block;
     border-radius: 10px;
     display: flex;
@@ -390,6 +375,61 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (min-width: 500px) {
+    .contact-wrapper {
+        height: 200vh;
+        justify-content: center;
+        padding: 130px 100px 100px 100px;
+    }
+
+    .contact-info {
+        margin-top: 2em;
+        padding-bottom: 3em;
+    }
+    .contact-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact-form-box {
+        padding-top: 3em;
+        margin-top: 2em;
+    }
+    .contact-form-box .square:nth-child(1) {
+        top: -20px;
+    }
+    .contact-form-box .square:nth-child(4) {
+        bottom: -50px;
+    }
+    .contact-form-box .square:nth-child(5) {
+        top: -20px;
+    }
+    .contact-form-container {
+        width: 400px;
+    }
+    .social-icons li a {
+        right: 0em;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 991px) {
+    .contact-wrapper {
+        padding: 50px;
+    }
+    .contact-content {
+        flex-direction: column;
+    }
+    .contact-info {
+        margin-bottom: 40px;
+    }
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 992px) {

@@ -1,11 +1,11 @@
 .about-text {
     position: absolute;
-    bottom: 23em;
-    left: 1.7em;
+    bottom: 30em;
+    left: 1.4em;
     border-right: 2px solid var(--clr-light);
     font-family: var(--ff-cursive);
     color: var(--clr-light);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
@@ -44,10 +44,18 @@
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
     .about-text {
         bottom: 19em;
         left: 2.4em;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .about-text {
+        bottom: 23em;
+        left: 1.7em;
         font-size: 1.7rem;
     }
 }

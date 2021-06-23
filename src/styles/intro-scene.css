@@ -5,13 +5,14 @@
     background-attachment: fixed;
     overflow: hidden;
     overflow-y: hidden;
+    overflow-x: hidden;
     animation: scene 2s linear;
 }
 
 .moon {
     position: absolute;
     top: 0;
-    left: 30%;
+    left: 10%;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -26,20 +27,20 @@
 
 .mountain {
     position: absolute;
-    bottom: 43px;
-    left: -170px;
+    bottom: 21px;
+    left: -110px;
     width: 100%;
     z-index: 800;
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
 .mountain2 {
     position: absolute;
-    bottom: 43px;
-    right: -260px;
+    bottom: 21px;
+    right: -100px;
     width: 100%;
     z-index: 800;
-    transform: scale(1.3); 
+    transform: scale(1.2); 
 }
 
 .scene i {
@@ -128,6 +129,22 @@
     100% {
         transform: translateX(400%) scale(1.5);
     }
+}
+
+@media screen and (min-width: 500px) {
+    .moon {
+        left: 30%;
+    }
+    .mountain {
+        bottom: 43px;
+        left: -170px; 
+        transform: scale(1.3);
+    }
+    .mountain2 {
+        bottom: 43px;
+        right: -260px;
+        transform: scale(1.3);
+    } 
 }
 
 @media screen and (min-width: 700px) {

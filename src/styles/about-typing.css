@@ -1,7 +1,7 @@
 .about-container {
     position: absolute;
-    bottom: 31em;
-    left: 4.5em;
+    bottom: 39em;
+    left: 2.3em;
     font-family: var(--ff-primary);
     white-space: nowrap;
     overflow: hidden;
@@ -37,10 +37,10 @@
     font-size: 30px;
     font-weight: 500;
     color: #f5de76;
-    animation: slide 4s steps(4) infinite;
+    animation: slide-one 4s steps(4) infinite;
 }
 
-@keyframes slide {
+@keyframes slide-one {
     100% {
         top: -367px;
     }
@@ -71,11 +71,37 @@
     }
 }
 
+@media screen and (min-width: 500px) {
+    .about-container {
+        bottom: 31em;
+        left: 4.5em;
+        height: 75px;
+    }
+    .static-text {
+        font-size: 30px;
+        top: 0.5em;
+    }
+    .dynamic-texts li span::after {
+        height: 150%;
+    }
+    .dynamic-texts li {
+        font-size: 30px;
+        top: 2px;
+        animation: slide-two 4s steps(4) infinite;
+    }
+}
+
+@keyframes slide-two {
+    100% {
+        top: -367px;
+    }
+}
+
 @media screen and (min-width: 580px) {
     .about-container {
         left: 7em;
         bottom: 30em;
-        height: 75px;
+        height: 70px;
     }
     .static-text {
         font-size: 35px;
@@ -86,12 +112,12 @@
     }
     .dynamic-texts li {
         font-size: 35px;
-        top: 2px;
-        animation: slide-two 4s steps(4) infinite;
+        top: -9px;
+        animation: slide-three 4s steps(4) infinite;
     }
 }
 
-@keyframes slide-two {
+@keyframes slide-three {
     100% {
         top: -367px;
     }
@@ -146,14 +172,14 @@
     .dynamic-texts li {
         font-size: 50px;
         top: -14px;
-        animation: slide-three 4s steps(4) infinite;
+        animation: slide-four 4s steps(4) infinite;
     }
     .dynamic-texts li span::after {
         height: 110%;
     }
 }
 
-@keyframes slide-three {
+@keyframes slide-four {
     100% {
         top: -360px;
     }
@@ -187,7 +213,6 @@
         left: 25em;
         height: 70px;
         overflow: hidden;
-        /* border: 1px solid white; */
     }
     .static-text {
         top: -16px;
@@ -197,14 +222,14 @@
     }
     .dynamic-texts li {
         top: -20px;
-        animation: slide-four 4s steps(4) infinite;
+        animation: slide-five 4s steps(4) infinite;
     }
     .dynamic-texts li span::after {
         height: 110%;
     }
 }
 
-@keyframes slide-four {
+@keyframes slide-five {
     100% {
         top: -380px;
     }

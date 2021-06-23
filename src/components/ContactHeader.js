@@ -13,19 +13,19 @@ export const ContactHeader = () => {
                     <div className="contact-banner">
                         <div className="contact-banner-icons">
                             <div className="banner-icon">
-                                <a href="https://www.facebook.com/aprilj.limas/" target="_blank"><FaFacebookF /></a>
+                                <a href="https://www.facebook.com/aprilj.limas/" target="_blank" rel="noreferrer"><FaFacebookF /></a>
                             </div>
                             <div className="banner-icon">
-                                <a href="https://twitter.com/aprilj_limas" target="_blank"><FaTwitter /></a>
+                                <a href="https://twitter.com/aprilj_limas" target="_blank" rel="noreferrer"><FaTwitter /></a>
                             </div>
                             <div className="banner-icon">
-                                <a href="https://www.instagram.com/posh_chic04/" target="_blank"><FaInstagramSquare /></a>
+                                <a href="https://www.instagram.com/posh_chic04/" target="_blank" rel="noreferrer"><FaInstagramSquare /></a>
                             </div>
                             <div className="banner-icon">
-                                <a href="https://www.linkedin.com/in/aprillimas/" target="_blank"><FaLinkedinIn /></a>
+                                <a href="https://www.linkedin.com/in/aprillimas/" target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
                             </div>
                             <div className="banner-icon">
-                                <a href="https://github.com/april-limas" target="_blank"><FaGithub className="github-a"/></a>
+                                <a href="https://github.com/april-limas" target="_blank" rel="noreferrer"><FaGithub className="github-a"/></a>
                                 
                             </div>
                         </div>
