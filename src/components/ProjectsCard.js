@@ -120,10 +120,10 @@ export const ProjectsCard = () => {
                                 id="imdbPreviewBtn">Preview</span>
                         </div>
                         <div>
-                            <a href="#">Live Site</a>
+                            <a href="https://chirp-app.netlify.app" target="_blank" rel="noreferrer">Live Site</a>
                         </div>
                         <div>
-                            <a href="https://github.com/april-limas/imdb-reimagined" target="_blank">Github</a>
+                            <a href="https://github.com/april-limas/imdb-reimagined" target="_blank" rel="noreferrer">Github</a>
                         </div>
                         <div>
                             <span
@@ -151,10 +151,11 @@ export const ProjectsCard = () => {
                                 id="chirpPreviewBtn">Preview</span>
                         </div>
                         <div>
-                            <a href="#">Live Site</a>
+                            <a href="https://chirp-app.netlify.app" target="_blank" rel="noreferrer">Live Site</a>
                         </div>
                         <div>
-                            <a href="https://github.com/april-limas/chirp" target="_blank">Github</a>
+                            <a href="https://github.com/april-limas/chirp" target="_blank"
+                            rel="noreferrer">Github</a>
                         </div>
                         <div>
                             <span
