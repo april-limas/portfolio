@@ -119,9 +119,9 @@ export const ProjectsCard = () => {
                                 onClick={toggleModal} 
                                 id="imdbPreviewBtn">Preview</span>
                         </div>
-                        <div>
+                        {/* <div>
                             <a href="https://chirp-app.netlify.app" target="_blank" rel="noreferrer">Live Site</a>
-                        </div>
+                        </div> */}
                         <div>
                             <a href="https://github.com/april-limas/imdb-reimagined" target="_blank" rel="noreferrer">Github</a>
                         </div>
@@ -150,9 +150,9 @@ export const ProjectsCard = () => {
                                 onClick={toggleModal} 
                                 id="chirpPreviewBtn">Preview</span>
                         </div>
-                        <div>
+                        {/* <div>
                             <a href="https://chirp-app.netlify.app" target="_blank" rel="noreferrer">Live Site</a>
-                        </div>
+                        </div> */}
                         <div>
                             <a href="https://github.com/april-limas/chirp" target="_blank"
                             rel="noreferrer">Github</a>
