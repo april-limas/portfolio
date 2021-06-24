@@ -46,9 +46,22 @@
 
 @media screen and (min-width: 500px) {
     .about-text {
-        bottom: 19em;
-        left: 2.4em;
+        bottom: 23em;
+        left: 2em;
         font-size: 1.5rem;
+    }
+    .about-animate {
+        animation: typewriter-text-second 3s steps(30) 1s 1 normal both,
+        cursor 0.5s steps(30) infinite normal;
+    }
+}
+
+@keyframes typewriter-text-second {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 82%;
     }
 }
 
@@ -68,12 +81,12 @@
         min-height: 130px;
     }
     .about-animate {
-        animation: typewriter-text-second 3s steps(30) 1s 1 normal both,
+        animation: typewriter-text-third 3s steps(30) 1s 1 normal both,
         cursor 0.5s steps(30) infinite normal;
     }
 }
 
-@keyframes typewriter-text-second {
+@keyframes typewriter-text-third {
     0% {
         width: 0;
     }
@@ -89,12 +102,12 @@
         font-size: 2.5rem;
     }
     .about-animate {
-        animation: typewriter-text-third 3s steps(30) 1s 1 normal both,
+        animation: typewriter-text-fourth 3s steps(30) 1s 1 normal both,
         cursor 0.5s steps(30) infinite normal;
     }
 }
 
-@keyframes typewriter-text-third {
+@keyframes typewriter-text-fourth {
     0% {
         width: 0;
     }
@@ -111,12 +124,12 @@
         font-size: 2.7rem;
     }
     .about-animate {
-        animation: typewriter-text-fourth 3s steps(30) 1s 1 normal both,
+        animation: typewriter-text-fifth 3s steps(30) 1s 1 normal both,
         cursor 0.5s steps(30) infinite normal;
     }
 }
 
-@keyframes typewriter-text-fourth {
+@keyframes typewriter-text-fifth {
     0% {
         width: 0;
     }
@@ -131,12 +144,12 @@
         font-size: 2.7rem;
     }
     .about-animate {
-        animation: typewriter-text-fifth 3s steps(30) 1s 1 normal both,
+        animation: typewriter-text-sixth 3s steps(30) 1s 1 normal both,
         cursor 0.5s steps(30) infinite normal;
     }
 }
 
-@keyframes typewriter-text-fifth {
+@keyframes typewriter-text-sixth {
     0% {
         width: 0;
     }
@@ -153,12 +166,12 @@
         font-size: 2.81rem;
     }
     .about-animate {
-        animation: typewriter-text-sixth 3s steps(30) 1s 1 normal both,
+        animation: typewriter-text-seventh 3s steps(30) 1s 1 normal both,
         cursor 0.5s steps(30) infinite normal;
     }
 }
 
-@keyframes typewriter-text-sixth {
+@keyframes typewriter-text-seventh {
     0% {
         width: 0;
     }
@@ -175,12 +188,12 @@
         font-size: 2.81rem;
     }
     .about-animate {
-        animation: typewriter-text-seventh 3s steps(30) 1s 1 normal both,
+        animation: typewriter-text-eighth 3s steps(30) 1s 1 normal both,
         cursor 0.5s steps(30) infinite normal;
     }
 }
 
-@keyframes typewriter-text-seventh {
+@keyframes typewriter-text-eighth {
     0% {
         width: 0;
     }
@@ -194,12 +207,12 @@
         left: 5em;
     }
     .about-animate {
-        animation: typewriter-text-eighth 3s steps(30) 1s 1 normal both,
+        animation: typewriter-text-ninth 3s steps(30) 1s 1 normal both,
         cursor 0.5s steps(30) infinite normal;
     }
 }
 
-@keyframes typewriter-text-eighth {
+@keyframes typewriter-text-ninth {
     0% {
         width: 0;
     }

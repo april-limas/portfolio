@@ -1,3 +1,4 @@
+import { Intro } from '../components/Intro'
 import { useEffect } from 'react'
 import moon from '../images/moon.png'
 import mountain from '../images/mountains.png'
@@ -41,15 +42,16 @@ export const IntroScene = () => {
 
     return (
         <div className="scene">
-                <img src={moon} alt='' className="moon"></img>
-                <img src={mountain} alt='' className="mountain"></img>
-                <img src={mountain} alt='' className=" mountain2"></img>
-                <img src={cloud1} alt='' className="cloud1"></img>
-                <img src={cloud2} alt='' className="cloud2"></img>
-                <img src={cloud3} alt='' className="cloud3"></img>
-                <img src={cloud1} alt='' className="cloud4"></img>
-                <img src={cloud2} alt='' className="cloud5"></img>
-                <img src={cloud3} alt='' className="cloud6"></img>
+            <Intro />
+            <img src={moon} alt='' className="moon"></img>
+            <img src={mountain} alt='' className="mountain"></img>
+            <img src={mountain} alt='' className=" mountain2"></img>
+            <img src={cloud1} alt='' className="cloud1"></img>
+            <img src={cloud2} alt='' className="cloud2"></img>
+            <img src={cloud3} alt='' className="cloud3"></img>
+            <img src={cloud1} alt='' className="cloud4"></img>
+            <img src={cloud2} alt='' className="cloud5"></img>
+            <img src={cloud3} alt='' className="cloud6"></img>
         </div>
     )
 }

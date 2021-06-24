@@ -6,9 +6,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     overflow-y: hidden;
     overflow-x: hidden;
+    overflow: hidden;
 }
 
 .intro__title {
